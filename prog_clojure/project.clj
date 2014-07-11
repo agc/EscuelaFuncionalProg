@@ -7,5 +7,5 @@
 
   :dependencies [  [org.clojure/clojure "1.5.1"]
                    [org.clojure/core.logic "0.8.7"]]
-  :main prog-logica.ejemplos1
+  :main prog-tutorial.ejemplo1
   )
