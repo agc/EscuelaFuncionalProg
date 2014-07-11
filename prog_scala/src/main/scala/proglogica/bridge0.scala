@@ -1,3 +1,5 @@
+package proglogica
+
 object Bridge0 {
 
 
@@ -5,7 +7,7 @@ object Bridge0 {
 		type Person= Value
 		val Alice,Bob,Candace,Dave = Value
 		val all = List(Alice,Bob,Candace,Dave)
-
+	}
 		import Person._  // usar los identificadores sin calificarlos Person.Alice ...
 		
 		val times = Map(Alice->5, Bob->10,Candace->20,Dave->25)
@@ -22,7 +24,7 @@ object Bridge0 {
 
 			list.foldLeft(init) {
 				(pares,p1) => list.foldLeft(pares) {
-					(pares, p2)=> if (p1<p2) (p1,p2)::pares else pares
+					(pares, p2)=> if (p1< p2) (p1,p2)::pares else pares
 
 				}
 			}
@@ -106,4 +108,3 @@ object Bridge0 {
 	}
 
 	}
-}
