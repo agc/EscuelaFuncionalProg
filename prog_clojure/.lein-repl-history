@@ -1,0 +1,76 @@
+(doc doc)
+(doc inc)
+(doc hash-map)
+(doc assoc)
+(assoc {:nombre "Armando" :apellido1 "Galve} :profesion "Profe" :direccion "Pamplona")
+)
+))
+(+2 3)
+(assoc {:nombre "Armando" :apellido1 "Galve"} :profesion "Profe" :direccion "Pamplona")
+(source doc)
+(doc inc)
+(doc find-doc)
+(doc source)
+(doc quot)
+(quot 3 2)
+(doc rem)
+(rem 3 2)
+(doc min)
+(doc rationalize)
+(rationalize 3)
+(rationalize 3.5)
+math/pi
+(doc pi)
+(doc-find pi)
+(find-doc "pi")
+(doc ==)
+(== 3 3.0 (+ 1 2))
+(doc >)
+(> 5 4 3)
+(> 5 2 4 3)
+(doc zero?)
+(doc pos?)
+(doc neg?)
+(pos? 1)
+(pos? 0)
+prueba1
+(load "ejemplos2")
+hechos1
+(load "ejemplos2")
+hechos1
+(pldb/facts-for  [['Vito 'Michael]
+               ['Vito 'Sonny]
+               ['Vito 'Fredo]
+               ['Michael 'Anthony]
+               ['Michael 'Mary]
+               ['Sonny 'Vicent]
+               ['Sonny 'Francesca]
+               ['Sonny 'Kathryn]
+               ['Sonny 'Frank]
+               ['Sonny 'Santino]] father
+)
+(-> :a [1 2 3])
+(-> 'a [1 2 3])
+(-> 'a '(1 2 3))
+(->> 'a '(1 2 3))
+(load "ejemplos2")
+hechos1
+hechos2
+(load "ejemplos2")
+prueba1
+prueba2
+(load "ejemplos2")
+prueba3
+(load "ejemplos2")
+prueba4
+prueba5
+(load "ejemplos2")
+prueba6
+(def a 1)
+(var a)
+(def b a)
+(var b)
+b
+(ns nuevo)
+(def a 10)
+(var a)

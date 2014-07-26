@@ -1,5 +1,6 @@
 
 import org.specs2.mutable._
+
 object BridgesSpec extends Specification {
 
 	
@@ -60,6 +61,37 @@ object BridgesSpec extends Specification {
 		"Buscar paths que resuelven el problema " in {
 			search.size mustEqual 2 
 		}
+		
+
+	} 
+
+	"Bridge " should {
+
+		import proglogica.ListBridge
+
+
+		val b= new ListBridge
+
+		import b.{State}
+
+
+		import b.Person._
+		
+		"Permitir el acceso a la lista de Personas " in {
+			
+			all must contain (Alice,Bob)
+		}
+
+		
+
+		"Calcular los estados siguientes " in {
+			// Pasan Alice Bob y les cuesta 10 minutos
+			b.next(State(all,true,50)) mustEqual 2 // contain( State(List(Candace, Dave),false,40))
+
+			b.next(State(List(Candace,Dave),false,50)) mustEqual 2 // contain (State(List(Bob, Candace, Dave),true,40))
+		}
+
+		
 		
 
 	} 
